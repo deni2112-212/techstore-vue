@@ -39,7 +39,7 @@ const formatPrice = value => `${value.toLocaleString('uk-UA')} ₴`
 
 onMounted(async () => {
   try {
-    const response = await fetch('/src/data/products.json')
+    const response = await fetch(`${import.meta.env.BASE_URL}products.json`)
     if (!response.ok) throw new Error('Не вдалося завантажити каталог')
     products.value = await response.json()
 
@@ -90,12 +90,20 @@ function removeFromCart(id) {
 function clearCart() {
   cart.value = []
 }
+
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+}
+
+function showDemoMessage() {
+  window.alert('Дякуємо! Це демонстраційний навчальний магазин.')
+}
 </script>
 
 <template>
   <div class="site-shell">
     <header class="site-header">
-      <a class="brand" href="#" @click.prevent="window.scrollTo({ top: 0, behavior: 'smooth' })">
+      <a class="brand" href="#" @click.prevent="scrollToTop">
         <span class="brand-mark">T</span>
         <span>TECH<span class="brand-accent">STORE</span></span>
       </a>
@@ -217,7 +225,7 @@ function clearCart() {
           <div class="cart-summary">
             <div class="summary-line"><span>Кількість товарів</span><strong>{{ cartCount }}</strong></div>
             <div class="summary-total"><span>Разом до сплати</span><strong>{{ formatPrice(cartTotal) }}</strong></div>
-            <button class="checkout-button" @click="alert('Дякуємо! Це демонстраційний навчальний магазин.')">
+            <button class="checkout-button" @click="showDemoMessage">
               Оформити замовлення <span>→</span>
             </button>
             <button class="clear-cart" @click="clearCart">Очистити кошик</button>

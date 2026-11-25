@@ -46,12 +46,17 @@ techstore-vue/
 ├── index.html
 ├── package.json
 ├── README.md
+├── vite.config.js
+├── .gitignore
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
+├── public/
+│   └── products.json
 └── src/
     ├── App.vue
     ├── main.js
     ├── style.css
-    ├── data/
-    │   └── products.json
     └── components/
         ├── ProductCard.vue
         └── CartItem.vue
@@ -76,3 +81,7 @@ git push -u origin main
 ### Публікація сайту через GitHub Pages
 
 Для Vite на GitHub Pages потрібно налаштувати `base` у `vite.config.js` відповідно до назви репозиторію, а потім додати workflow для GitHub Actions. Для здачі вихідного коду достатньо завантажити репозиторій за інструкцією вище.
+
+## Публікація на GitHub Pages
+
+У проєкті вже налаштовано `vite.config.js` для репозиторію `techstore-vue` та GitHub Actions workflow у `.github/workflows/deploy.yml`. Після завантаження файлів у гілку `main` GitHub Actions автоматично збере проєкт (`npm ci`, `npm run build`) і опублікує папку `dist`. У репозиторії відкрий **Settings → Pages** та встанови **Build and deployment → Source: GitHub Actions**. Перевір результат у вкладці **Actions**.

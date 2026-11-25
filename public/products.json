@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Ігровий ноутбук ASUS TUF Gaming",
+    "category": "Ноутбуки",
+    "price": 42999,
+    "description": "Потужний ноутбук для ігор, навчання та роботи.",
+    "image": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=900&q=85",
+    "tag": "Хіт продажів"
+  },
+  {
+    "id": 2,
+    "name": "Ноутбук Lenovo IdeaPad Slim 5",
+    "category": "Ноутбуки",
+    "price": 28999,
+    "description": "Легкий та універсальний ноутбук на кожен день.",
+    "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=85",
+    "tag": "Для навчання"
+  },
+  {
+    "id": 3,
+    "name": "Монітор Samsung Odyssey G5",
+    "category": "Монітори",
+    "price": 11999,
+    "description": "Великий екран із плавним зображенням для ігор.",
+    "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=900&q=85",
+    "tag": "Ігровий"
+  },
+  {
+    "id": 4,
+    "name": "Монітор LG UltraGear 24”",
+    "category": "Монітори",
+    "price": 7499,
+    "description": "Чітке зображення та комфортна робота щодня.",
+    "image": "https://images.unsplash.com/photo-1586210579191-33b45e38fa2c?auto=format&fit=crop&w=900&q=85",
+    "tag": ""
+  },
+  {
+    "id": 5,
+    "name": "Механічна клавіатура Logitech G Pro",
+    "category": "Периферія",
+    "price": 4299,
+    "description": "Компактна механічна клавіатура для точного керування.",
+    "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=900&q=85",
+    "tag": "Популярне"
+  },
+  {
+    "id": 6,
+    "name": "Миша Razer DeathAdder Essential",
+    "category": "Периферія",
+    "price": 1199,
+    "description": "Зручна миша з точним сенсором.",
+    "image": "https://images.unsplash.com/photo-1527814050087-3793815479db?auto=format&fit=crop&w=900&q=85",
+    "tag": ""
+  },
+  {
+    "id": 7,
+    "name": "Відеокарта MSI GeForce RTX",
+    "category": "Комплектуючі",
+    "price": 25999,
+    "description": "Продуктивна графіка для сучасних ігор і творчості.",
+    "image": "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=900&q=85",
+    "tag": "Потужність"
+  },
+  {
+    "id": 8,
+    "name": "SSD Kingston NV2 1TB",
+    "category": "Комплектуючі",
+    "price": 2899,
+    "description": "Швидкий накопичувач для системи та файлів.",
+    "image": "https://images.unsplash.com/photo-1597872250969-1c6c6c4b1b6b?auto=format&fit=crop&w=900&q=85",
+    "tag": ""
+  }
+]
